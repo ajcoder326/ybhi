@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // Brand Colors
-  static const Color primary = Color(0xFF592D82);
+  static const Color primary = Color(0xFF592d82);
   static const Color primaryDark = Color(0xFF4A2470);
   static const Color primaryLight = Color(0xFF7B4AAB);
   static const Color primaryLighter = Color(0xFF9B6BC3);
@@ -25,7 +25,7 @@ class AppColors {
   static const Color textMuted = Color(0xFF888888);
   static const Color textLight = Color(0xFFAAAAAA);
   static const Color textWhite = Color(0xFFFFFFFF);
-  static const Color textPurple = Color(0xFF592D82);
+  static const Color textPurple = Color(0xFF592d82);
 
   // Border Colors
   static const Color borderLight = Color(0xFFE8E8E8);
@@ -45,6 +45,13 @@ class AppColors {
   static const Color debitRed = Color(0xFFC62828);
 }
 
+class AppFonts {
+  static const String regular = 'System';
+  static const String medium = 'System';
+  static const String semiBold = 'System';
+  static const String bold = 'System';
+}
+
 class AppFontSizes {
   static const double xs = 10;
   static const double sm = 12;
@@ -54,6 +61,13 @@ class AppFontSizes {
   static const double xl = 20;
   static const double xxl = 24;
   static const double xxxl = 28;
+}
+
+class AppFontWeights {
+  static const FontWeight regular = FontWeight.w400;
+  static const FontWeight medium = FontWeight.w500;
+  static const FontWeight semiBold = FontWeight.w600;
+  static const FontWeight bold = FontWeight.w700;
 }
 
 class AppSpacing {
@@ -74,4 +88,30 @@ class AppBorderRadius {
   static const double xl = 16;
   static const double xxl = 20;
   static const double full = 9999;
+}
+
+class AppShadows {
+  static final BoxShadow sm = BoxShadow(
+    color: Colors.black.withOpacity(0.08),
+    offset: const Offset(0, 1),
+    blurRadius: 3,
+  );
+
+  static final BoxShadow md = BoxShadow(
+    color: Colors.black.withOpacity(0.1),
+    offset: const Offset(0, 4),
+    blurRadius: 12,
+  );
+
+  static final BoxShadow lg = BoxShadow(
+    color: Colors.black.withOpacity(0.12),
+    offset: const Offset(0, 8),
+    blurRadius: 24,
+  );
+
+  static final BoxShadow purple = BoxShadow(
+    color: const Color(0xFF592d82).withOpacity(0.25),
+    offset: const Offset(0, 4),
+    blurRadius: 16,
+  );
 }
